@@ -1,5 +1,11 @@
+import { Navbar } from "./Layouts/Navbar";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
