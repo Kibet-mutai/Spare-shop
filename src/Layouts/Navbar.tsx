@@ -1,5 +1,10 @@
-import HiMagnifyingGlass from "react-icons";
+import { useState } from "react";
+import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
+import { BsHeart } from "react-icons/bs";
+
 export const Navbar = () => {
+  const [showDropDown, setShowDropDown] = useState(false);
+
   return (
     <>
       <div className="flex justify-around bg-black p-2">
@@ -39,6 +44,7 @@ export const Navbar = () => {
               className="py-2 px-2 border-r text-base cursor-pointer flex flex-row truncate items-center focus:outline-none"
               data-dropdown-placement="bottom"
               type="button"
+              onClick={() => setShowDropDown(!showDropDown)}
             >
               <span className=" hover:text-[#f7c601]">All Category</span>
               <svg
@@ -59,132 +65,109 @@ export const Navbar = () => {
             </button>
             <div
               id="dropdownUsers"
-              className="z-10 absolute top-full left-0 bg-white rounded-lg shadow w-60 dark:bg-gray-700"
+              className="z-10 mt-1 hidden absolute top-full left-0 bg-white rounded-lg shadow w-48 dark:bg-gray-700"
             >
               <ul
-                className="h-48 py-2 overflow-y-auto text-gray-700 dark:text-gray-200"
+                className=" h-72 py-2 overflow-y-auto px-3 text-gray-700 dark:text-gray-200"
                 aria-labelledby="dropdownUsersButton"
               >
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-1.jpg"
-                      alt="Jese image"
-                    />
-                    Jese Leos
+                    All Categories
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-2.jpg"
-                      alt="Jese image"
-                    />
-                    Robert Gough
+                    Body Parts
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-3.jpg"
-                      alt="Jese image"
-                    />
-                    Bonnie Green
+                    Electronic Parts
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-4.jpg"
-                      alt="Jese image"
-                    />
-                    Leslie Livingston
+                    Engine Parts
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-5.jpg"
-                      alt="Jese image"
-                    />
-                    Michael Gough
+                    Brake Disks & Pads
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-2.jpg"
-                      alt="Jese image"
-                    />
-                    Joseph Mcfall
+                    Suspension Parts
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-3.jpg"
-                      alt="Jese image"
-                    />
-                    Roberta Casas
+                    Exteriors
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
                   >
-                    <img
-                      className="w-6 h-6 mr-2 rounded-full"
-                      src="/docs/images/people/profile-picture-1.jpg"
-                      alt="Jese image"
-                    />
-                    Neil Sims
+                    Lighting parts
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                  >
+                    Oil & Lubricants
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                  >
+                    Energy Parts
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                  >
+                    Wheels And Tires
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                  >
+                    Steering Parts
                   </a>
                 </li>
               </ul>
-              <a
-                href="#"
-                className="flex items-center p-3 text-sm font-medium text-blue-600 border-t border-gray-200 rounded-b-lg bg-gray-50 dark:border-gray-600 hover:bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-blue-500 hover:underline"
-              >
-                <svg
-                  className="w-5 h-5 mr-1"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path>
-                </svg>
-                Add new user
-              </a>
             </div>
           </div>
           <div className="search-bar py-2 pl-4">
@@ -196,38 +179,24 @@ export const Navbar = () => {
               placeholder="Search for products"
             />
           </div>
-          <button className="bg-black w-20 h-full py-2 rounded-r-3xl flex justify-center hover:bg-yellow-600">
-            {/* <a target="_blank" href="https://icons8.com/icon/59878/search"></a>
-            <a target="_blank" href="https://icons8.com"></a> */}
-            <HiMagnifyingGlass />
+          <button className="bg-black w-20 rounded-r-3xl flex justify-center items-center ">
+            <FaSearch className="text-white hover:text-yellow-600" />
           </button>
         </div>
         <div className="flex flex-row gap-x-4">
           <div className="icons">
-            <a href="#">
-              <img
-                src="src/assets/Images/user.png"
-                className="w-6 h-6"
-                alt=""
-              />
+            <a href="#account">
+              <FaUser className="w-6 h-6" />
             </a>
           </div>
           <div className="icons">
-            <a href="#">
-              <img
-                src="src/assets/Images/heart.png"
-                className="w-6 h-6"
-                alt=""
-              />
+            <a href="#wishlist">
+              <BsHeart className="w-6 h-6" />
             </a>
           </div>
           <div className="icons">
-            <a href="#">
-              <img
-                src="src/assets/Images/shopping-cart.png"
-                className="w-6 h-6"
-                alt=""
-              />
+            <a href="#cart">
+              <FaShoppingCart className="w-6 h-6" />
             </a>
           </div>
         </div>
