@@ -23,6 +23,24 @@ h3 {
 span {
   font-family: "Dongle", sans-serif;
 }
+.span-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.drop-text {
+  font-family: "Dongle", sans-serif;
+}
+.heading-text {
+  font-family: "Roboto", sans-serif;
+}
+.contact-no {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.contact-text {
+  font-family: "Dongle", sans-serif;
+  font-weight: 700;
+}
 /* Customize the scrollbar track */
 ::-webkit-scrollbar-track {
   background-color: #f2f2f2; /* Set the background color */

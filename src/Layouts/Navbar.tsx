@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
+import { Hero } from "./Hero";
 
 export const Navbar = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -52,16 +53,16 @@ export const Navbar = () => {
             {showDropDown && (
               <div
                 id="dropdownUsers"
-                className="z-10 mt-1 absolute top-full left-0 bg-white rounded-lg shadow w-48 dark:bg-gray-700"
+                className="z-10 mt-1 absolute top-full left-0 bg-white rounded-lg shadow w-48"
               >
                 <ul
-                  className=" h-72 py-2 overflow-y-auto px-3 text-gray-700 dark:text-gray-200"
+                  className=" h-72 py-2 overflow-y-auto px-3 text-gray-700"
                   aria-labelledby="dropdownUsersButton"
                 >
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       All Categories
                     </a>
@@ -69,7 +70,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Body Parts
                     </a>
@@ -77,7 +78,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Electronic Parts
                     </a>
@@ -85,7 +86,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Engine Parts
                     </a>
@@ -93,7 +94,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Brake Disks & Pads
                     </a>
@@ -101,7 +102,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Suspension Parts
                     </a>
@@ -109,7 +110,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Exteriors
                     </a>
@@ -117,7 +118,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Lighting parts
                     </a>
@@ -125,7 +126,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Oil & Lubricants
                     </a>
@@ -133,7 +134,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Energy Parts
                     </a>
@@ -141,7 +142,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Wheels And Tires
                     </a>
@@ -149,7 +150,7 @@ export const Navbar = () => {
                   <li>
                     <a
                       href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
                     >
                       Steering Parts
                     </a>
@@ -189,6 +190,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+      <Hero />
     </>
   );
 };
