@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
+import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 
 export const Navbar = () => {
   const [showDropDown, setShowDropDown] = useState(false);
-
   return (
     <>
       <div className="flex justify-around bg-black p-2">
@@ -17,7 +17,7 @@ export const Navbar = () => {
         <div className="flex flex-row gap-x-2">
           <a href="#">
             <h5 className="text-white hover:text-yellow-700">
-              Store Locator |{" "}
+              Store Locator |
             </h5>
           </a>
           <a href="#">
@@ -47,128 +47,116 @@ export const Navbar = () => {
               onClick={() => setShowDropDown(!showDropDown)}
             >
               <span className=" hover:text-[#f7c601]">All Category</span>
-              <svg
-                className="w-4 h-4 ml-2"
-                aria-hidden="true"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
+              {showDropDown ? <BiChevronUp /> : <BiChevronDown />}
             </button>
-            <div
-              id="dropdownUsers"
-              className="z-10 mt-1 hidden absolute top-full left-0 bg-white rounded-lg shadow w-48 dark:bg-gray-700"
-            >
-              <ul
-                className=" h-72 py-2 overflow-y-auto px-3 text-gray-700 dark:text-gray-200"
-                aria-labelledby="dropdownUsersButton"
+            {showDropDown && (
+              <div
+                id="dropdownUsers"
+                className="z-10 mt-1 absolute top-full left-0 bg-white rounded-lg shadow w-48 dark:bg-gray-700"
               >
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    All Categories
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Body Parts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Electronic Parts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Engine Parts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Brake Disks & Pads
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Suspension Parts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Exteriors
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Lighting parts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Oil & Lubricants
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Energy Parts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Wheels And Tires
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
-                  >
-                    Steering Parts
-                  </a>
-                </li>
-              </ul>
-            </div>
+                <ul
+                  className=" h-72 py-2 overflow-y-auto px-3 text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownUsersButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      All Categories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Body Parts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Electronic Parts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Engine Parts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Brake Disks & Pads
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Suspension Parts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Exteriors
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Lighting parts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Oil & Lubricants
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Energy Parts
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Wheels And Tires
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] dark:hover:bg-gray-600 border-b dark:hover:text-white"
+                    >
+                      Steering Parts
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
           <div className="search-bar py-2 pl-4">
             <input
