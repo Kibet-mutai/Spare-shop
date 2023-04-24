@@ -4,6 +4,7 @@ import { BsHeart } from "react-icons/bs";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { Hero } from "./Hero";
 import { Slider } from "./Slider";
+import { Filter } from "../Components/Filter";
 
 export const Navbar = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -166,7 +167,7 @@ export const Navbar = () => {
               type="search"
               name="search"
               id="search"
-              placeholder="Search for products"
+              placeholder="Search for products..."
             />
           </div>
           <button className="bg-black w-20 rounded-r-3xl flex justify-center items-center ">
@@ -193,6 +194,7 @@ export const Navbar = () => {
       </div>
       <Hero />
       <Slider />
+      <Filter />
     </>
   );
 };

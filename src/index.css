@@ -3,32 +3,33 @@
 @tailwind utilities;
 
 h5 {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h6 {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 h3 {
-  font-family: "Dongle", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
 .search-bar {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .category-links {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 span {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .span-text {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
 .drop-text {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .heading-text {
   font-family: "Roboto", sans-serif;
@@ -38,9 +39,26 @@ span {
   cursor: pointer;
 }
 .contact-text {
-  font-family: "Dongle", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+
+.img-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-weight: 300;
+}
+.icon {
+  font-family: "Roboto", sans-serif;
+}
+#btn-filter:hover .icon {
+  @apply text-black;
+}
+
 /* Customize the scrollbar track */
 ::-webkit-scrollbar-track {
   background-color: #f2f2f2; /* Set the background color */
