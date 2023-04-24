@@ -175,17 +175,17 @@ export const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-row gap-x-4">
-          <div className="icons">
+          <div className="icons-items">
             <a href="#account">
               <FaUser className="w-6 h-6" />
             </a>
           </div>
-          <div className="icons">
+          <div className="icons-items">
             <a href="#wishlist">
               <BsHeart className="w-6 h-6" />
             </a>
           </div>
-          <div className="icons">
+          <div className="icons-items">
             <a href="#cart">
               <FaShoppingCart className="w-6 h-6" />
             </a>
