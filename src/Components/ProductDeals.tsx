@@ -1,17 +1,11 @@
-import {
-  useState,
-  useEffect,
-  JSXElementConstructor,
-  ReactElement,
-  ReactFragment,
-} from "react";
-import { MdOutlineStarOutline } from "react-icons/md";
+import { useState, useEffect } from "react";
+import { MdOutlineStar, MdOutlineStarPurple500 } from "react-icons/md";
 
 const ProductDeals = () => {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
     const difference = +new Date(`${year}-10-1`) - +new Date();
-    let timeLeft: {} = {};
+    let timeLeft: { [key: string]: any } = {};
 
     if (difference > 0) {
       timeLeft = {
@@ -34,7 +28,7 @@ const ProductDeals = () => {
     }, 1000);
   });
 
-  const timerComponents: [] = [];
+  const timerComponents: string[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
     if (!timeLeft[interval]) {
@@ -63,12 +57,12 @@ const ProductDeals = () => {
             <h3 className="uppercase">Combo sports stereos for coupe models</h3>
             <div className="flex flex-row gap-x-3">
               <div className="flex">
-                <MdOutlineStarOutline className="text-gray-500" />
-                <MdOutlineStarOutline className="text-gray-500" />
-                <MdOutlineStarOutline className="text-gray-500" />
-                <MdOutlineStarOutline className="text-gray-500" />
-                <MdOutlineStarOutline className="text-gray-500" />
-                <MdOutlineStarOutline className="text-gray-500" />
+                <MdOutlineStarPurple500 className="text-gray-200" />
+                <MdOutlineStarPurple500 className="text-gray-200" />
+                <MdOutlineStarPurple500 className="text-gray-200" />
+                <MdOutlineStarPurple500 className="text-gray-200" />
+                <MdOutlineStarPurple500 className="text-gray-200" />
+                <MdOutlineStarPurple500 className="text-gray-200" />
               </div>
               <h1 className="text-sm uppercase font-thin">(0 reviews)</h1>
             </div>
@@ -109,14 +103,14 @@ const ProductDeals = () => {
             </h3>
             <div className="flex flex-row gap-x-3">
               <div className="flex">
-                <MdOutlineStarOutline className="text-yellow-500" />
-                <MdOutlineStarOutline className="text-yellow-500" />
-                <MdOutlineStarOutline className="text-yellow-500" />
-                <MdOutlineStarOutline className="text-yellow-500" />
-                <MdOutlineStarOutline className="text-yellow-500" />
-                <MdOutlineStarOutline className="text-yellow-500" />
+                <MdOutlineStar className="text-yellow-500" />
+                <MdOutlineStar className="text-yellow-500" />
+                <MdOutlineStar className="text-yellow-500" />
+                <MdOutlineStar className="text-yellow-500" />
+                <MdOutlineStar className="text-yellow-500" />
+                <MdOutlineStar className="text-yellow-500" />
               </div>
-              <h1 className="text-sm uppercase font-thin">(1 reviews)</h1>
+              <h1 className="text-sm uppercase font-thin">(1 review)</h1>
             </div>
             <div className="flex flex-row gap-x-4 mt-4">
               <span>$120</span>
