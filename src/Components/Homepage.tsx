@@ -4,6 +4,7 @@ import { Navbar } from "../Layouts/Navbar";
 import { Hero } from "../Layouts/Hero";
 import { Slider } from "../Layouts/Slider";
 import { Filter } from "./Filter";
+import ProductDeals from "./ProductDeals";
 
 export const Homepage = () => {
   const [navbar, setNavbar] = useState(false);
@@ -22,6 +23,7 @@ export const Homepage = () => {
       <Hero />
       <Slider />
       <Filter />
+      <ProductDeals />
     </>
   );
 };
