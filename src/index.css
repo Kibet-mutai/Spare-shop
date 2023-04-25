@@ -58,6 +58,9 @@ span {
 #btn-filter:hover .icon {
   @apply text-black;
 }
+#btn-offer:hover .offer-text {
+  @apply text-white;
+}
 
 /* Customize the scrollbar track */
 ::-webkit-scrollbar-track {

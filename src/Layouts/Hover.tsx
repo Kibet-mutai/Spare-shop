@@ -3,8 +3,8 @@ import { BsHeart } from "react-icons/bs";
 
 export const Hover = () => {
   return (
-    <div className="relative ease-in-out duration-500">
-      <div className="bg-red-600 flex items-center justify-between p-4 fixed right-0 left-0 shadow-2xl">
+    <div className="relative transition ease-linear duration-1000">
+      <div className="bg-white flex items-center justify-between p-4 fixed right-0 left-0 z-50 shadow-sm h-24">
         <div className="logo-img">
           <img src="src/assets/Images/logo-1.png" className="w-36" alt="Logo" />
         </div>
@@ -25,7 +25,7 @@ export const Hover = () => {
             <h2 className="heading-text uppercase">Pages</h2>
           </a>
         </div>
-        <div className="flex flex-row gap-x-3">
+        <div className="flex flex-row gap-x-9">
           <button className="cursor-pointer">
             <FaSearch className="w-6 h-6 border-black" />
           </button>
