@@ -2,9 +2,6 @@ import { useState } from "react";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
-import { Hero } from "./Hero";
-import { Slider } from "./Slider";
-import { Filter } from "../Components/Filter";
 
 export const Navbar = () => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -192,9 +189,6 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      <Hero />
-      <Slider />
-      <Filter />
     </>
   );
 };

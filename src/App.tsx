@@ -1,11 +1,9 @@
-import { Hover } from "./Layouts/Hover";
-import { Navbar } from "./Layouts/Navbar";
+import { Homepage } from "./Components/Homepage";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hover />
+      <Homepage />
     </>
   );
 }
