@@ -120,11 +120,13 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black border-t border-t-gray-700 py-8 px-8 flex justify-between">
-        <p className="uppercase text-white text-xs">
-          2023 &copy; bumbleb theme. All rights reserved
-        </p>
-        <img src="src/assets/Images/pay.png" alt="worldpay" />
+      <div className="px-6 bg-black">
+        <div className="border-t border-t-gray-700 py-8 px-8 flex justify-between">
+          <p className="uppercase text-white text-xs">
+            2023 &copy; bumbleb theme. All rights reserved
+          </p>
+          <img src="src/assets/Images/pay.png" alt="worldpay" />
+        </div>
       </div>
     </>
   );
