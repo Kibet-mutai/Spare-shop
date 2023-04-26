@@ -7,6 +7,7 @@ import { Filter } from "./Filter";
 import ProductDeals from "./ProductDeals";
 import { Offers } from "./Offers";
 import { BiArrowToTop } from "react-icons/bi";
+import { Footer } from "../Layouts/Footer";
 
 export const Homepage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -56,6 +57,7 @@ export const Homepage = () => {
           </button>
         </div>
       )}
+      <Footer />
     </>
   );
 };
