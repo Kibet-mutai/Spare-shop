@@ -16,7 +16,7 @@ export const Footer = () => {
             Hi, we are always open for cooperation & suggestions, contact us in
             one of the ways below:
           </p>
-          <h3 className="text-2xl text-white uppercase mt-4">Contact</h3>
+          <h3 className="text-lg text-white uppercase mt-4">Contact</h3>
           <p className="text-white flex flex-col gap-y-4">
             <p className="hover:text-yellow-500 text-xs">
               Co , 25 Silicon Road,London D04 89GR
@@ -28,7 +28,7 @@ export const Footer = () => {
           </p>
         </div>
         <div className="col-span-2 flex flex-col gap-y-4">
-          <h3 className="text-2xl text-white uppercase mb-4">
+          <h3 className="text-lg text-white uppercase mb-4">
             Product categories
           </h3>
           <p className="text-white flex flex-col gap-y-4">
@@ -55,7 +55,7 @@ export const Footer = () => {
           </p>
         </div>
         <div className="col-span-2 flex flex-col gap-y-4">
-          <h3 className="text-2xl text-white uppercase mb-4">Get to Know us</h3>
+          <h3 className="text-lg text-white uppercase mb-4">Get to Know us</h3>
           <p className="text-white flex flex-col gap-y-4">
             <a href="#">
               <p className="hover:text-yellow-500 text-xs">About Bumbleb</p>
@@ -78,7 +78,7 @@ export const Footer = () => {
           </p>
         </div>
         <div className="col-span-2 flex flex-col gap-y-4">
-          <h3 className="text-2xl text-white uppercase mb-4">
+          <h3 className="text-lg text-white uppercase mb-4">
             Get 10% discount
           </h3>
           <p className="text-gray-300 text-xs">
