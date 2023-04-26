@@ -8,73 +8,75 @@ export const Footer = () => {
           loading="lazy"
           alt="logo"
         />
-        <p className="text-gray-300">
+        <p className="text-gray-300 text-xs">
           Hi, we are always open for cooperation & suggestions, contact us in
           one of the ways below:
         </p>
-        <h3 className="text-4xl text-white uppercase mt-4">Contact</h3>
+        <h3 className="text-2xl text-white uppercase mt-4">Contact</h3>
         <p className="text-white flex flex-col gap-y-4">
-          <p className="hover:text-yellow-500">
+          <p className="hover:text-yellow-500 text-xs">
             Co , 25 Silicon Road,London D04 89GR
           </p>
-          <p className="hover:text-yellow-500">PHONE: 1900 568 659</p>
-          <p className="hover:text-yellow-500">EMAIL:example@example.com</p>
+          <p className="hover:text-yellow-500 text-xs">PHONE: 1900 568 659</p>
+          <p className="hover:text-yellow-500 text-xs">
+            EMAIL:example@example.com
+          </p>
         </p>
       </div>
       <div className="col-span-2 flex flex-col gap-y-4">
-        <h3 className="text-4xl text-white uppercase mb-4">
+        <h3 className="text-2xl text-white uppercase mb-4">
           Product categories
         </h3>
         <p className="text-white flex flex-col gap-y-4">
           <a href="#">
-            <p className="hover:text-yellow-500">Body Parts</p>
+            <p className="hover:text-yellow-500 text-xs">Body Parts</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Furniture Parts</p>
+            <p className="hover:text-yellow-500 text-xs">Furniture Parts</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Lighting Parts</p>
+            <p className="hover:text-yellow-500 text-xs">Lighting Parts</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Engine Parts</p>
+            <p className="hover:text-yellow-500 text-xs">Engine Parts</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Suspension Parts</p>
+            <p className="hover:text-yellow-500 text-xs">Suspension Parts</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Brakes disks & Pads</p>
+            <p className="hover:text-yellow-500 text-xs">Brakes disks & Pads</p>
           </a>
         </p>
       </div>
       <div className="col-span-2 flex flex-col gap-y-4">
-        <h3 className="text-4xl text-white uppercase mb-4">Get to Know us</h3>
+        <h3 className="text-2xl text-white uppercase mb-4">Get to Know us</h3>
         <p className="text-white flex flex-col gap-y-4">
           <a href="#">
-            <p className="hover:text-yellow-500">About Bumbleb</p>
+            <p className="hover:text-yellow-500 text-xs">About Bumbleb</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Investors</p>
+            <p className="hover:text-yellow-500 text-xs">Investors</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Career</p>
+            <p className="hover:text-yellow-500 text-xs">Career</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Contact Us</p>
+            <p className="hover:text-yellow-500 text-xs">Contact Us</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Affiliate Program</p>
+            <p className="hover:text-yellow-500 text-xs">Affiliate Program</p>
           </a>
           <a href="#">
-            <p className="hover:text-yellow-500">Partnership</p>
+            <p className="hover:text-yellow-500 text-xs">Partnership</p>
           </a>
         </p>
       </div>
       <div className="col-span-2 flex flex-col gap-y-4">
-        <h3 className="text-4xl text-white uppercase mb-4">Get 10% discount</h3>
-        <p className="text-gray-300">
+        <h3 className="text-2xl text-white uppercase mb-4">Get 10% discount</h3>
+        <p className="text-gray-300 text-xs">
           Subscribe our newsletter and get 10% discount for your first order.
         </p>
-        <div className="flex border-b p-3">
+        <div className="flex border-b-gray-700 border-b-2 p-3">
           <input
             type="email"
             name="email"
@@ -82,7 +84,7 @@ export const Footer = () => {
             className="outline-none border-0 bg-inherit text-white"
             placeholder="Your Email"
           />
-          <button className="text-yellow-500 text-2xl uppercase ml-6">
+          <button className="text-yellow-500 text-xs uppercase ml-6">
             <h3>Subscribe</h3>
           </button>
         </div>

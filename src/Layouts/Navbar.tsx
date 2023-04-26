@@ -9,24 +9,26 @@ export const Navbar = () => {
     <>
       <div className="flex justify-around bg-black p-2">
         <div className="text-white">
-          <h6>Hot days! - 50% Get ready for summer!</h6>
+          <p className="font-thin text-sm">
+            Hot days! - 50% Get ready for summer!
+          </p>
         </div>
         <div className="text-white text-xs">
           <h4>TAKE CARE OF YOUR TIRE 22% OFF USE CODE “ MNSKS ”</h4>
         </div>
         <div className="flex flex-row gap-x-2">
           <a href="#">
-            <h5 className="text-white hover:text-yellow-700">
+            <p className="text-white hover:text-yellow-700 text-sm">
               Store Locator |
-            </h5>
+            </p>
           </a>
           <a href="#">
-            <h5 className="text-white hover:text-yellow-700">
+            <p className="text-white hover:text-yellow-700 text-sm">
               Order Tracking |
-            </h5>
+            </p>
           </a>
           <a href="#">
-            <h5 className="text-white hover:text-yellow-700">FAQS</h5>
+            <p className="text-white hover:text-yellow-700 text-sm">FAQS</p>
           </a>
         </div>
       </div>
@@ -39,14 +41,14 @@ export const Navbar = () => {
           />
         </div>
         <div className="rounded-3xl bg-white flex max-w-md">
-          <div className="relative">
+          <div className="relative py-1">
             <button
               className="py-2 px-2 border-r text-base cursor-pointer flex flex-row truncate items-center focus:outline-none"
               data-dropdown-placement="bottom"
               type="button"
               onClick={() => setShowDropDown(!showDropDown)}
             >
-              <span className=" hover:text-[#f7c601]">All Category</span>
+              <p className="text-sm hover:text-[#f7c601]">All Category</p>
               {showDropDown ? <BiChevronUp /> : <BiChevronDown />}
             </button>
             {showDropDown && (
@@ -160,7 +162,7 @@ export const Navbar = () => {
           </div>
           <div className="search-bar py-2 pl-4">
             <input
-              className="rounded-3xl outline-none"
+              className="text-sm outline-none"
               type="search"
               name="search"
               id="search"

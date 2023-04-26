@@ -13,7 +13,7 @@ export const Filter = () => {
     <>
       <div
         style={{ backgroundImage: `url(${bgImage.url})` }}
-        className="bg-cover bg-center max-w-[1440px] h-[200px] m-auto mt-4 mx-6"
+        className="bg-cover bg-center max-w-[1440px] h-[250px] m-auto mt-4 mx-6"
       >
         <div className="flex justify-center flex-row gap-x-3 p-24">
           <div className="relative w-56">
@@ -25,7 +25,7 @@ export const Filter = () => {
               <BiCaretDown className="text-[#f7c601] mt-1" />
             </button>
             {showDropDown && (
-              <div className="absolute left-0 top-full  right-0 bg-white">
+              <div className="absolute left-0 top-50 right-0 bg-white">
                 <ul className="flex flex-col w-full py-2 border-x-2 border-y-2 border-gray-400">
                   <li className="w-full hover:bg-blue-500 px-3">
                     <a href="#" className="block w-full">
@@ -60,7 +60,7 @@ export const Filter = () => {
               <BiCaretDown className="text-[#f7c601] mt-1" />
             </button>
             {showDropDownThree && (
-              <div className="absolute left-0 top-full right-0 bg-white">
+              <div className="absolute left-0 top-50 z-20 right-0 bg-white">
                 <ul className="flex flex-col w-full py-2 border-x-2 border-y-2 border-gray-400">
                   <li className="w-full hover:bg-blue-500 px-3">
                     <a href="#" className="block w-full">
@@ -125,7 +125,7 @@ export const Filter = () => {
               <BiCaretDown className="text-[#f7c601] mt-1" />
             </button>
             {showDropDownTwo && (
-              <div className="absolute left-0 top-full right-0 bg-white">
+              <div className="absolute left-0 top-50 z-10 right-0 bg-white">
                 <ul className="flex flex-col w-full py-2 border-x-2 border-y-2 border-gray-400">
                   <li className="w-full hover:bg-blue-500 px-3">
                     <a href="#" className="block w-full">
