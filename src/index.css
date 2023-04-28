@@ -122,3 +122,7 @@ input[data-autocompleted] {
   display: inline-block;
   opacity: 0;
 }
+
+.hover\:bg-bar:hover {
+  background: url("src/assets/Images/product5.jpg");
+}

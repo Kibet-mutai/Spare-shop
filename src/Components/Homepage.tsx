@@ -4,10 +4,11 @@ import { Navbar } from "../Layouts/Navbar";
 import { Hero } from "../Layouts/Hero";
 import { Slider } from "../Layouts/Slider";
 import { Filter } from "./Filter";
-import ProductDeals from "./ProductDeals";
-import { Offers } from "./Offers";
+import ProductDeals from "./Products/ProductDeals";
+import { Offers } from "./Products/Offers";
 import { BiArrowToTop } from "react-icons/bi";
 import { Footer } from "../Layouts/Footer";
+import { BestSellingProducts } from "./Products/BestSellingProducts";
 
 export const Homepage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -47,6 +48,7 @@ export const Homepage = () => {
       <Filter />
       <ProductDeals />
       <Offers />
+      <BestSellingProducts />
       {showButton && (
         <div className="flex justify-end px-4 py-6">
           <button
