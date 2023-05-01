@@ -55,6 +55,9 @@ span {
 .icon {
   font-family: "Roboto", sans-serif;
 }
+.fill-text {
+  font-family: "Montserrat", sans-serif;
+}
 #btn-filter:hover .icon {
   @apply text-black;
 }
@@ -88,35 +91,11 @@ input[data-autocompleted] {
   background: url("src/assets/Images/product5.jpg");
 }
 
-.link-text {
-  /* overflow-wrap: break-word; */
-  word-break: break-all;
-  /* inline-size: 50%; */
+.filter-words {
+  overflow-wrap: break-word;
+  /* word-break: break-all; */
+  inline-size: 80%;
 }
-
-/* .best-links::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: right;
-  transform-origin: right;
-  transition: -webkit-transform 250ms ease-in;
-  transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  }
-
-.best-links:hover::after {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transform-origin: left;
-  transform-origin: left;
-} */
 
 .best-links a {
   position: relative; /* Set position property to relative */

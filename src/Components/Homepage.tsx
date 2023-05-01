@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { SecondNavbar } from "../Layouts/SecondNavbar";
 import { Navbar } from "../Layouts/Navbar";
 import { Hero } from "../Layouts/Hero";
-import { Slider } from "../Layouts/Slider";
 import { Filter } from "./Filter";
 import ProductDeals from "./Products/ProductDeals";
 import { Offers } from "./Products/Offers";
@@ -44,7 +43,6 @@ export const Homepage = () => {
     <>
       {navbar ? <SecondNavbar /> : <Navbar />}
       <Hero />
-      <Slider />
       <Filter />
       <ProductDeals />
       <Offers />

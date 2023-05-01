@@ -1,10 +1,7 @@
-import { useState } from "react";
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 
 export const Navbar = () => {
-  const [showDropDown, setShowDropDown] = useState(false);
   return (
     <>
       <div className="flex justify-around bg-black p-2">
@@ -41,125 +38,6 @@ export const Navbar = () => {
           />
         </div>
         <div className="rounded-3xl bg-white flex max-w-md">
-          <div className="relative py-1">
-            <button
-              className="py-2 px-2 border-r text-base cursor-pointer flex flex-row truncate items-center focus:outline-none"
-              data-dropdown-placement="bottom"
-              type="button"
-              onClick={() => setShowDropDown(!showDropDown)}
-            >
-              <p className="text-sm hover:text-[#f7c601]">All Category</p>
-              {showDropDown ? <BiChevronUp /> : <BiChevronDown />}
-            </button>
-            {showDropDown && (
-              <div
-                id="dropdownUsers"
-                className="z-10 mt-1 absolute top-full left-0 bg-white rounded-lg shadow w-48"
-              >
-                <ul
-                  className=" h-72 py-2 overflow-y-auto px-3 text-gray-700"
-                  aria-labelledby="dropdownUsersButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      All Categories
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Body Parts
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Electronic Parts
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Engine Parts
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Brake Disks & Pads
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Suspension Parts
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Exteriors
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Lighting parts
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Oil & Lubricants
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Energy Parts
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Wheels And Tires
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="category-links flex items-center px-4 py-2 hover:text-[#f7c601] border-b"
-                    >
-                      Steering Parts
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
           <div className="search-bar py-2 pl-4">
             <input
               className="text-sm outline-none"
