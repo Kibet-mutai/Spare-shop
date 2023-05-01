@@ -1,11 +1,11 @@
-import { SetStateAction, useEffect, useState } from "react";
-import { IoRadioButtonOffSharp, IoRadioButtonOnOutline } from "react-icons/io5";
+// import { SetStateAction, useEffect, useState } from "react";
+// import { IoRadioButtonOffSharp, IoRadioButtonOnOutline } from "react-icons/io5";
 export const Slider = () => {
-  const images = [
-    {
-      url: "src/assets/Images/slider-1.jpg",
-    },
-  ];
+  // const images = [
+  //   {
+  //     url: "src/assets/Images/slider-1.jpg",
+  //   },
+  // ];
 
   // const [currentImage, setCurrentImage] = useState(0);
 

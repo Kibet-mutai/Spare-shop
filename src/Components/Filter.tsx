@@ -188,7 +188,7 @@ export const Filter = () => {
                 <FaSearch className="text-black icon" />
               </button>
             </div>
-            <div className="absolute z-10 right-20  p-2">
+            <div className="flex justify-end p-2">
               <button id="btn-filter" className="bg-black p-3 rounded-md">
                 <h3 className="text-white uppercase">Reset</h3>
               </button>
