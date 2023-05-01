@@ -163,3 +163,8 @@ input[data-autocompleted] {
   transform-origin: bottom;
   transition-delay: 4s;
 }
+
+.blog:hover .nav-hover {
+  visibility: visible;
+  transition: visibility 250ms ease-in;
+}

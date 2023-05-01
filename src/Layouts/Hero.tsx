@@ -9,6 +9,7 @@ import {
 import { MdEngineering } from "react-icons/md";
 import { RiOilFill } from "react-icons/ri";
 import { useState } from "react";
+import { HoverNavbar } from "./HoverNavbar";
 export const Hero = () => {
   const [showItems, setShowItems] = useState(false);
   return (
@@ -108,22 +109,33 @@ export const Hero = () => {
             </div>
           )}
         </div>
-        <div className="flex items-center flex-row gap-x-4">
-          <a href="#">
-            <h2 className="heading-text uppercase">Home</h2>
-          </a>
-          <a href="#">
-            <h2 className="heading-text uppercase">Shop</h2>
-          </a>
-          <a href="#">
-            <h2 className="heading-text uppercase">Product</h2>
-          </a>
-          <a href="#">
-            <h2 className="heading-text uppercase">Blog</h2>
-          </a>
-          <a href="#">
-            <h2 className="heading-text uppercase">Page</h2>
-          </a>
+        <div className="flex items-center flex-row gap-x-4 relative">
+          <div className="pt-2 h-full">
+            <a href="#">
+              <h2 className="heading-text uppercase">Home</h2>
+            </a>
+          </div>
+          <div className="pt-2 h-full">
+            <a href="#">
+              <h2 className="heading-text uppercase">Shop</h2>
+            </a>
+          </div>
+          <div className="pt-2 h-full">
+            <a href="#">
+              <h2 className="heading-text uppercase">Product</h2>
+            </a>
+          </div>
+          <div className="blog h-full items-center text-center pt-2">
+            <a href="#">
+              <h2 className="heading-text uppercase">Blog</h2>
+              <HoverNavbar />
+            </a>
+          </div>
+          <div className="pt-2 h-full">
+            <a href="#">
+              <h2 className="heading-text uppercase">Page</h2>
+            </a>
+          </div>
         </div>
         <div className="flex flex-row gap-x-1">
           <p className="contact-text text-gray-300">Need help: </p>
