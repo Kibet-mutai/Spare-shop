@@ -1,7 +1,7 @@
 import { FaSearch, FaShoppingCart, FaUser } from "react-icons/fa";
 import { BsHeart } from "react-icons/bs";
 
-export const Hover = () => {
+export const SecondNavbar = () => {
   return (
     <div className="relative">
       <div className="bg-white flex items-center justify-between p-4 fixed right-0 left-0 z-50 shadow-sm h-[72px] ease-in delay-1000">

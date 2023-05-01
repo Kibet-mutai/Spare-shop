@@ -84,45 +84,82 @@ input[data-autocompleted] {
   width: 4px;
 }
 
-.slider {
-  position: relative;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-}
-
-.caption {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  white-space: nowrap;
-}
-
-.char {
-  display: inline-block;
-  opacity: 0;
-}
-
 .hover\:bg-bar:hover {
   background: url("src/assets/Images/product5.jpg");
+}
+
+.link-text {
+  /* overflow-wrap: break-word; */
+  word-break: break-all;
+  /* inline-size: 50%; */
+}
+
+/* .best-links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  }
+
+.best-links:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+} */
+
+.best-links a {
+  position: relative; /* Set position property to relative */
+  color: black; /* Set default text-color */
+  transition: color 0.5s ease-in-out; /* Smooth transition for color change */
+}
+
+.best-links a::before {
+  content: attr(data-text); /* Get the text from data-text attribute */
+  position: absolute; /* Set position property to absolute */
+  top: 0; /* Align with the top of the text */
+  left: 0; /* Align with the left of the text */
+  color: green; /* Set the initial color of the text */
+  overflow: hidden; /* Hide the overflow of the text */
+  transition: width 0.5s ease-in-out; /* Smooth transition for width change */
+  width: 0;
+}
+
+.best-links a:hover::before {
+  width: 100%;
+}
+
+.best-links a:hover::before {
+  color: black;
+}
+
+.best-links a:hover::before {
+  -webkit-text-fill-color: transparent; /* Hide original text color */
+  -webkit-background-clip: text; /* Apply background color to text only */
+  background-color: green;
+}
+
+.deals-body:hover .hover-text-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.deals-body:hover .hover-text-two {
+  display: flex;
+}
+
+.deals-body:hover {
+  transition-duration: 3s ease-in-out;
+  transform-origin: bottom;
+  transition-delay: 4s;
 }

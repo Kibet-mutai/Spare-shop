@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Hover } from "../Layouts/Hover";
+import { SecondNavbar } from "../Layouts/SecondNavbar";
 import { Navbar } from "../Layouts/Navbar";
 import { Hero } from "../Layouts/Hero";
 import { Slider } from "../Layouts/Slider";
@@ -42,24 +42,24 @@ export const Homepage = () => {
   window.addEventListener("scroll", changeNavbar);
   return (
     <>
-      {navbar ? <Hover /> : <Navbar />}
+      {navbar ? <SecondNavbar /> : <Navbar />}
       <Hero />
       <Slider />
       <Filter />
       <ProductDeals />
       <Offers />
       <BestSellingProducts />
-      {showButton && (
-        <div className="flex justify-end px-4 py-6">
-          <button
-            onClick={scrollToTop}
-            className="bg-blue-300 w-16 h-16 rounded-full border-yellow-500 flex justify-center items-center"
-          >
-            <BiArrowToTop className="h-10 w-10" />
-          </button>
-        </div>
-      )}
       <Footer />
+      {/* {showButton && (
+          <div className="flex justify-end px-4 py-6 absolute bottom-10 right-0 ">
+            <button
+              onClick={scrollToTop}
+              className="bg-blue-300 w-16 h-16 rounded-full border-yellow-500 flex justify-center items-center"
+            >
+              <BiArrowToTop className="h-10 w-10" />
+            </button>
+          </div>
+        )} */}
     </>
   );
 };

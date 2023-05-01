@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MdOutlineStar, MdOutlineStarPurple500 } from "react-icons/md";
+import { HoverItems } from "./HoverItems";
 
 const ProductDeals = () => {
   const calculateTimeLeft = () => {
@@ -50,12 +51,15 @@ const ProductDeals = () => {
         Hot Deal Products
       </h1>
       <div className="grid grid-cols-8 p-8 gap-x-8">
-        <div className="col-span-4 p-[55px] h-96 flex border border-yellow-300 relative cursor-pointer">
-          <img
-            src="src/assets/Images/Image-26.jpg"
-            className="h-60 w-60 object-cover"
-            alt="product-image"
-          />
+        <div className="col-span-4 p-[55px] h-96 flex border border-yellow-300 relative cursor-pointer deals-body">
+          <div className="deals-image">
+            <img
+              src="src/assets/Images/Image-26.jpg"
+              className="h-60 w-60 object-cover"
+              alt="product-image"
+            />
+            <HoverItems />
+          </div>
           <div className="absolute top-[60px] left-20 bg-red-500 flex items-center">
             <p className="text-white">-20%</p>
           </div>
@@ -95,12 +99,15 @@ const ProductDeals = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-4 p-[55px] h-96 flex border border-yellow-300 relative">
-          <img
-            src="src/assets/Images/Image-17.jpg"
-            className=" w-60 h-60 object-cover"
-            alt="product-image"
-          />
+        <div className="col-span-4 p-[55px] h-96 flex border border-yellow-300 relative deals-body">
+          <div className="deals-image">
+            <img
+              src="src/assets/Images/Image-17.jpg"
+              className=" w-60 h-60 object-cover"
+              alt="product-image"
+            />
+            <HoverItems />
+          </div>
           <div className="absolute top-[60px] left-20 bg-red-500 flex items-center">
             <p className="text-white">-30%</p>
           </div>
