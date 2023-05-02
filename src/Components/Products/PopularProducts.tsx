@@ -1,4 +1,6 @@
 import { MdOutlineStar } from "react-icons/md";
+import { PopularProduct } from "./PopularProduct";
+import { HoverPopular } from "./HoverPopular";
 
 export const PopularProducts = () => {
   const image = {
@@ -13,13 +15,14 @@ export const PopularProducts = () => {
         </a>
       </div>
       <div className="flex flex-row gap-x-4 p-4">
-        <div className="  w-[257px] flex flex-col gap-y-3">
+        <div className=" deals-body w-[257px] relative flex flex-col gap-y-3">
           <div className="pop-image">
             <img
               src="src/assets/Images/Image-1.jpg"
               className="w-[227px] h-[227px] object-cover"
               alt="Charging batt"
             />
+            <HoverPopular />
           </div>
           <div className="uppercase font-[Inter] hover:text-[#f7c601] text-xs">
             <a href="#">Body parts</a>
@@ -41,13 +44,14 @@ export const PopularProducts = () => {
           </div>
           <span className="price">$200</span>
         </div>
-        <div className="  w-[257px] flex flex-col gap-y-3">
+        <div className=" deals-body w-[257px] relative flex flex-col gap-y-3">
           <div className="pop-image">
             <img
               src="src/assets/Images/Image-24.jpg"
               className="w-[227px] h-[227px] object-cover"
               alt="Charging batt"
             />
+            <HoverPopular />
           </div>
           <div className="uppercase font-[Inter] hover:text-[#f7c601] text-xs">
             <a href="#">electronic parts</a>
@@ -67,13 +71,14 @@ export const PopularProducts = () => {
           </div>
           <span className="price">$100</span>
         </div>
-        <div className=" w-[257px] flex flex-col gap-y-3">
+        <div className="deals-body w-[257px] relative flex flex-col gap-y-3">
           <div className="pop-image">
             <img
               src="src/assets/Images/Image-23.jpg"
               className="w-[227px] h-[227px] object-cover"
               alt="Charging batt"
             />
+            <HoverPopular />
           </div>
           <div className="uppercase font-[Inter] hover:text-[#f7c601] text-xs">
             <a href="#">Engine parts</a>
@@ -107,6 +112,7 @@ export const PopularProducts = () => {
           </div>
         </div>
       </div>
+      <PopularProduct />
     </>
   );
 };

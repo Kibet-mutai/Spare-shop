@@ -134,7 +134,7 @@ input[data-autocompleted] {
 }
 
 .deals-body:hover .hover-text-two {
-  display: flex;
+  display: inline;
 }
 
 .deals-body:hover {
