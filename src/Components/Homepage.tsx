@@ -3,11 +3,9 @@ import { SecondNavbar } from "../Layouts/SecondNavbar";
 import { Navbar } from "../Layouts/Navbar";
 import { Hero } from "../Layouts/Hero";
 import { Filter } from "./Filter";
-import ProductDeals from "./Products/ProductDeals";
-import { Offers } from "./Products/Offers";
 import { BiArrowToTop } from "react-icons/bi";
 import { Footer } from "../Layouts/Footer";
-import { BestSellingProducts } from "./Products/BestSellingProducts";
+import { ProductsExport } from "./Products/ProductsExport";
 
 export const Homepage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -44,9 +42,7 @@ export const Homepage = () => {
       {navbar ? <SecondNavbar /> : <Navbar />}
       <Hero />
       <Filter />
-      <ProductDeals />
-      <Offers />
-      <BestSellingProducts />
+      <ProductsExport />
       <Footer />
       {/* {showButton && (
           <div className="flex justify-end px-4 py-6 absolute bottom-10 right-0 ">
