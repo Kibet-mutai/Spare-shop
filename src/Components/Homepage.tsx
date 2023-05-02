@@ -6,6 +6,7 @@ import { Filter } from "./Filter";
 import { BiArrowToTop } from "react-icons/bi";
 import { Footer } from "../Layouts/Footer";
 import { ProductsExport } from "./Products/ProductsExport";
+import { AdSection } from "../Layouts/AdSection";
 
 export const Homepage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -43,6 +44,7 @@ export const Homepage = () => {
       <Hero />
       <Filter />
       <ProductsExport />
+      <AdSection />
       <Footer />
       {/* {showButton && (
           <div className="flex justify-end px-4 py-6 absolute bottom-10 right-0 ">

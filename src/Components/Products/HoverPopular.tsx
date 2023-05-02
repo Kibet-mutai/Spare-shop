@@ -17,7 +17,7 @@ export const HoverPopular = () => {
       </div>
       <div className="hidden absolute left-1/4 right-1/2  bottom-5 hover-text-two">
         <button
-          className="p-2 items-center bg-[#f7c601] text-black rounded-xl w-24 hover:bg-black"
+          className="p-2 items-center bg-[#f7c601] text-black rounded-3xl w-24 hover:bg-black"
           id="btn-offer"
         >
           <h3 className="uppercase text-sm offer-text">Add cart</h3>
